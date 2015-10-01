@@ -1,6 +1,0 @@
-beq $t0 $t1 label2
-bne $t0 $t1 label1
-j label2
-bne $t0 $t1 label3
-jal label1
-beq $t0 $t1 label2
