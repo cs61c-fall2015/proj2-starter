@@ -8,6 +8,3 @@ lb $t0 0 $s0
 jal label
 l2: addiu $t3 $t1
 ori $t3 $t2 0xABC
-addiu $t3 $t5 3
-ori $t1 $t0 0xFFFFFFFF
-bne $t0 $t1 not_found
