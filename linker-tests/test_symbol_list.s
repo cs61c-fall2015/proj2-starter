@@ -97,7 +97,7 @@ test_symbol_for_addr:
 # Tests add_to_list()
 # $a0 = address of beginning of list
 #-------------------------------------------
-test_add_to_list:				# Begin test_add_to_list
+test_add_to_list:
 	addiu $sp, $sp, -8
 	sw $s0, 4($sp)
 	sw $ra, 0($sp)
@@ -105,15 +105,15 @@ test_add_to_list:				# Begin test_add_to_list
 	print_str(test_add_to_list_name)
 	li $a0, 0			
 	la $a1, test_label1
-	la $a2, 1234
+	li $a2, 1234
 	jal add_to_list			# Test label 1
 	move $a0, $v0
 	la $a1, test_label2
-	la $a2, 3456
+	li $a2, 3456
 	jal add_to_list			# Test label 2
 	move $a0, $v0
 	la $a1, test_label3
-	la $a2, 5678
+	li $a2, 5678
 	jal add_to_list			# Test label 3
 	move $s0, $v0
 	
