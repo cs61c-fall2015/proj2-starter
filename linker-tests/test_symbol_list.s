@@ -63,7 +63,7 @@ test_addr_for_symbol:
 	addiu $sp, $sp, -8
 	sw $a0, 4($sp)
 	sw $ra, 0($sp)
-	print_str(test_symbol_for_addr_name)
+	print_str(test_addr_for_symbol_name)
 	
 	lw $a0, 4($sp)
 	la $a1, test_label1
@@ -82,7 +82,7 @@ test_symbol_for_addr:
 	addiu $sp, $sp, -8
 	sw $a0, 4($sp)
 	sw $ra, 0($sp)
-	print_str(test_addr_for_symbol_name)
+	print_str(test_symbol_for_addr_name)
 
 	lw $a0, 4($sp)
 	li $a1, 3456
