@@ -156,8 +156,8 @@ atsl_next:
         move $a0, $v1
         jal tokenize
         move $a0, $s1           # $a0 = symbol list
-        addu $a1, $v1           # $a1 = symbol name (string)
-        move $a2, $s2, $v0      # $a2 = symbol offset (bytes)
+        move $a1, $v1           # $a1 = symbol name (string)
+        addu $a2, $s2, $v0      # $a2 = symbol offset (bytes)
         jal add_to_list
         move $s1, $v0
         beq $s3, $0, atsl_done

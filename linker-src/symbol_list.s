@@ -96,7 +96,7 @@ symbol_for_addr:
         lw $a0, 8($a0)
         j symbol_for_addr
 symbol_found:
-        lw $v0, 4($a0)
+        lw $v0, 0($a0)
         jr $ra
 symbol_not_found:
         li $v0, 0
